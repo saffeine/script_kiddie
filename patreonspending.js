@@ -32,6 +32,13 @@ var fetchCurrency = function(token){
 }
 
 var getSpending = function(){
+  var url_ = "https://www.patreon.com/pledges";
+  if(document.location.href != url_){
+    alert("This bookmarklet doesn't work on pages that aren't the official Patreon Pledges pages.\nA new tab will be opened, taking you to the page. Please try again.");
+    window.open(url_, "_blank");
+    return;
+  }
+
   var str_ = "";
   var currencies = ["£", "$", "KK"];
   for(var i=0; i<currencies.length; i++){
