@@ -34,7 +34,7 @@ var fetchCurrency = function(token){
 var getSpending = function(){
   var url_ = "https://www.patreon.com/pledges";
   if(document.location.href != url_){
-    if(!confirm("This bookmarklet doesn't work on pages that aren't the official Patreon Pledges pages.\nClicking 'OK' will open the Pledges page in a new tab where you can try again.")){ return; }
+    if(!confirm("This bookmarklet doesn't work on pages that aren't the official Patreon Pledges pages. Clicking 'OK' will open the Pledges page in a new tab where you can try running the bookmarklet again.")){ return; }
     window.open(url_, "_blank");
     return;
   }
