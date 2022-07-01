@@ -1,0 +1,111 @@
+@font-face {
+    font-family: Looper Font;
+    src: url("/assets/font.ttf");
+}
+
+#sf_youloop_container {
+    display: block;
+
+    left: 8px;
+    top: 8px;
+    margin: 8px 0px 8px 0px;
+    width: 100%;
+    height: 32px;
+    box-sizing: border-box;
+
+    font-family: Looper Font;
+
+    color: #FFFF;
+    background-color: #0002;
+
+    border: 1px solid #0002;
+
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#sf_youloop_container p {
+    display: inline;
+    mix-blend-mode: difference;
+}
+
+#sf_youloop_container .loop_button {
+    display: inline-block;
+    height: 100%;
+
+    margin: 0px;
+    padding: 0px 0px;
+
+    color: #FFF;
+    background-color: #D00;
+    text-shadow: 0px 0px 2px #FFFF;
+
+    box-sizing: border-box;
+    border-radius: 0px;
+
+    cursor: pointer;
+}
+
+#sf_youloop_container .loop_button {
+    transition: 0.2s;
+}
+
+#sf_youloop_container .loop_button img {
+    width: 32px;
+    height: 32px;
+}
+
+#sf_youloop_container .loop_controls {
+    display: inline-block;
+    position: absolute;
+    margin: 3px 16px;
+    padding: 0px 0px;
+    font-size: 18px;
+}
+
+#sf_youloop_container .loop_controls input,
+#sf_youloop_container .loop_controls button {
+    position: relative;
+
+    width: 80px;
+    height: 24px;
+
+    margin: 0px 8px;;
+    padding: 4px 8px;
+
+    text-align: center;
+
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: 16px;
+
+    mix-blend-mode: difference;
+    color: inherit;
+    background-color: #0000;
+
+    border: 1px solid #FFF4;
+    border-radius: 4px;
+
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+#sf_youloop_container .loop_controls button {
+    position: relative;
+    
+    width: 16px;
+    height: 24px;
+
+    margin-left: -6px;
+    margin-right: 4px;
+    padding: 0px;
+
+    cursor: pointer;
+    line-height: 0px;
+}
+
+#sf_youloop_container .loop_controls input:hover, 
+#sf_youloop_container .loop_controls button:hover {
+    transition: 0.3s;
+    border: 1px solid #FFF8;
+}

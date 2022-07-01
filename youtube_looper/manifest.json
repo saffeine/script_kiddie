@@ -1,0 +1,27 @@
+{
+    "name": "Youtube Looper",
+    "description": "Looper For YouTube.",
+    "icons": {
+        "128": "icon.png"
+    },
+    "version":  "1.0",
+    "manifest_version": 3,
+
+    "background": {
+        "service_worker": "youtube_looper.js"
+    },
+
+    "permissions": [
+        "tabs",
+        "scripting"
+    ],
+
+    "host_permissions": [
+        "*://www.youtube.com/*"
+    ],
+
+    "web_accessible_resources": [{
+        "matches": ["<all_urls>"],
+        "resources": ["looper/looper.js", "looper/looper.css", "assets/loop.png", "assets/font.ttf"]
+    }]
+}

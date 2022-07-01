@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <link rel='stylesheet' href='./idexplorer.css' />
+        <script src='./idexplorer.js'></script>
+    </head>
+
+    <body>
+        <div id="ide-sidebar">
+            <div id="ide-sidebar-links"></div>
+        </div>
+        <div id="ide-filetray"></div>
+        <div id="ide-editor" contenteditable="true"></div>
+
+        <script>
+            ide.initialise();
+            ide.updateDimensions();
+            ide.switchWorkspace("workspace");
+        </script>
+    </body>
+</html>
